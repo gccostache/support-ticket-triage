@@ -1,0 +1,41 @@
+id,method,ticket,expected_category,predicted_category,correct,best_score,margin,reason
+T01,keyword,The sign-in screen says my credentials are invalid.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+T02,keyword,Employees are denied access after authenticating through the identity provider.,Authentication,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+T03,keyword,I forgot my password and cannot regain access to my account.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+T04,keyword,Our single sign-on redirects employees back to the login screen.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+T05,keyword,The account was disabled and the user cannot sign in.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+T06,keyword,Searching for a customer takes a minute although it used to be instant.,Performance,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+T07,keyword,Every page takes a long time to load for our staff.,Performance,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+T08,keyword,The reporting process consumes excessive memory and freezes the application.,Performance,Performance,True,,,Keyword counts; ties and no matches request review.
+T09,keyword,Database response times have increased sharply this morning.,Performance,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+T10,keyword,The application becomes sluggish whenever several users run reports.,Performance,Performance,True,,,Keyword counts; ties and no matches request review.
+T11,keyword,Order events never arrive at the partner endpoint from our webhook.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+T12,keyword,The external CRM connector rejects records because the field mapping is invalid.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+T13,keyword,Updates in one system are no longer reflected in the other system.,Integration,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+T14,keyword,Exporting orders to the shipping provider fails on every request.,Integration,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+T15,keyword,Our REST API returns a server error when sending customer records.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+T16,keyword,How do I update the payment method for my subscription?,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+T17,keyword,Can you recommend a restaurant for dinner?,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+T18,keyword,Something went wrong yesterday.,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+T19,keyword,The login password is rejected and separately the webhook export is broken.,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+T20,keyword,The application is slow and separately the API import is failing.,Other / needs review,Integration,False,,,Keyword counts; ties and no matches request review.
+T01,semantic,The sign-in screen says my credentials are invalid.,Authentication,Authentication,True,0.5341775417327881,0.27509063482284546,One category meets the similarity and separation thresholds.
+T02,semantic,Employees are denied access after authenticating through the identity provider.,Authentication,Authentication,True,0.49117204546928406,0.3659041076898575,One category meets the similarity and separation thresholds.
+T03,semantic,I forgot my password and cannot regain access to my account.,Authentication,Authentication,True,0.4433120787143707,0.34332871437072754,One category meets the similarity and separation thresholds.
+T04,semantic,Our single sign-on redirects employees back to the login screen.,Authentication,Authentication,True,0.464540034532547,0.41946081817150116,One category meets the similarity and separation thresholds.
+T05,semantic,The account was disabled and the user cannot sign in.,Authentication,Authentication,True,0.7608652114868164,0.5304684489965439,One category meets the similarity and separation thresholds.
+T06,semantic,Searching for a customer takes a minute although it used to be instant.,Performance,Performance,True,0.4915401339530945,0.39760804176330566,One category meets the similarity and separation thresholds.
+T07,semantic,Every page takes a long time to load for our staff.,Performance,Performance,True,0.4704214930534363,0.31163156032562256,One category meets the similarity and separation thresholds.
+T08,semantic,The reporting process consumes excessive memory and freezes the application.,Performance,Performance,True,0.5754885673522949,0.3036998510360718,One category meets the similarity and separation thresholds.
+T09,semantic,Database response times have increased sharply this morning.,Performance,Performance,True,0.5716990828514099,0.3267689049243927,One category meets the similarity and separation thresholds.
+T10,semantic,The application becomes sluggish whenever several users run reports.,Performance,Performance,True,0.6158129572868347,0.3815166652202606,One category meets the similarity and separation thresholds.
+T11,semantic,Order events never arrive at the partner endpoint from our webhook.,Integration,Integration,True,0.35413411259651184,0.19739922881126404,One category meets the similarity and separation thresholds.
+T12,semantic,The external CRM connector rejects records because the field mapping is invalid.,Integration,Integration,True,0.3829214572906494,0.222822904586792,One category meets the similarity and separation thresholds.
+T13,semantic,Updates in one system are no longer reflected in the other system.,Integration,Other / needs review,False,0.2586284577846527,0.1374097615480423,Weak match: no category meets the similarity threshold.
+T14,semantic,Exporting orders to the shipping provider fails on every request.,Integration,Integration,True,0.4793173372745514,0.22915461659431458,One category meets the similarity and separation thresholds.
+T15,semantic,Our REST API returns a server error when sending customer records.,Integration,Integration,True,0.4467798173427582,0.19744667410850525,One category meets the similarity and separation thresholds.
+T16,semantic,How do I update the payment method for my subscription?,Other / needs review,Other / needs review,True,0.1284823715686798,0.04171084612607956,Weak match: no category meets the similarity threshold.
+T17,semantic,Can you recommend a restaurant for dinner?,Other / needs review,Other / needs review,True,0.011117314919829369,0.01738589257001877,Weak match: no category meets the similarity threshold.
+T18,semantic,Something went wrong yesterday.,Other / needs review,Other / needs review,True,0.24232688546180725,0.03552260994911194,Weak match: no category meets the similarity threshold.
+T19,semantic,The login password is rejected and separately the webhook export is broken.,Other / needs review,Other / needs review,True,0.4024830460548401,0.010089516639709473,Close matches: more than one category may apply.
+T20,semantic,The application is slow and separately the API import is failing.,Other / needs review,Performance,False,0.5276933908462524,0.08091351389884949,One category meets the similarity and separation thresholds.

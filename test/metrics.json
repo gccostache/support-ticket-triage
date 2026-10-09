@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "created_utc": "2026-10-09T12:44:09.279460+00:00",
+    "split": "test",
+    "dataset_sha256": "2837a8bdcf459fb7230742c0b51f0e50c206d4010ba7946bb322b16facbb7a23",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "min_similarity": 0.3,
+    "min_margin": 0.05,
+    "category_descriptions": {
+      "Authentication": "Users cannot sign in or access their account. Login failures, passwords, locked accounts, single sign-on, authentication, and access permissions.",
+      "Performance": "The application is slow or takes too long to respond. High response times, slow database queries, delays, timeouts, and excessive resource usage.",
+      "Integration": "Data exchange between systems is failing. API requests, webhooks, external services, data synchronization, imports, and exports."
+    },
+    "package_versions": {
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0"
+    }
+  },
+  "methods": {
+    "keyword": {
+      "tickets": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "coverage": 0.5,
+      "accepted_accuracy": 0.9,
+      "review_recall": 0.8,
+      "confusion_matrix": {
+        "Authentication": {
+          "Authentication": 4,
+          "Performance": 0,
+          "Integration": 0,
+          "Other / needs review": 1
+        },
+        "Performance": {
+          "Authentication": 0,
+          "Performance": 2,
+          "Integration": 0,
+          "Other / needs review": 3
+        },
+        "Integration": {
+          "Authentication": 0,
+          "Performance": 0,
+          "Integration": 3,
+          "Other / needs review": 2
+        },
+        "Other / needs review": {
+          "Authentication": 0,
+          "Performance": 0,
+          "Integration": 1,
+          "Other / needs review": 4
+        }
+      }
+    },
+    "semantic": {
+      "tickets": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "coverage": 0.75,
+      "accepted_accuracy": 0.9333333333333333,
+      "review_recall": 0.8,
+      "confusion_matrix": {
+        "Authentication": {
+          "Authentication": 5,
+          "Performance": 0,
+          "Integration": 0,
+          "Other / needs review": 0
+        },
+        "Performance": {
+          "Authentication": 0,
+          "Performance": 5,
+          "Integration": 0,
+          "Other / needs review": 0
+        },
+        "Integration": {
+          "Authentication": 0,
+          "Performance": 0,
+          "Integration": 4,
+          "Other / needs review": 1
+        },
+        "Other / needs review": {
+          "Authentication": 0,
+          "Performance": 1,
+          "Integration": 0,
+          "Other / needs review": 4
+        }
+      }
+    }
+  }
+}

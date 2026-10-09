@@ -1,0 +1,41 @@
+id,method,ticket,expected_category,predicted_category,correct,best_score,margin,reason
+D01,keyword,I cannot sign in because my password is rejected.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+D02,keyword,Our SSO login returns an authentication error.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+D03,keyword,My account is locked after several failed login attempts.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+D04,keyword,The password reset link has expired.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+D05,keyword,Users receive invalid credentials when signing in.,Authentication,Authentication,True,,,Keyword counts; ties and no matches request review.
+D06,keyword,The application is slow when opening the dashboard.,Performance,Performance,True,,,Keyword counts; ties and no matches request review.
+D07,keyword,Database queries now take thirty seconds to finish.,Performance,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+D08,keyword,CPU usage stays at 100 percent and the application becomes sluggish.,Performance,Performance,True,,,Keyword counts; ties and no matches request review.
+D09,keyword,The reports page has a very high response time.,Performance,Performance,True,,,Keyword counts; ties and no matches request review.
+D10,keyword,Opening a customer record causes a timeout.,Performance,Performance,True,,,Keyword counts; ties and no matches request review.
+D11,keyword,The webhook is no longer delivering events to the external service.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+D12,keyword,Our API requests fail with HTTP 500 during data synchronization.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+D13,keyword,The nightly import from the external CRM stops with a mapping error.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+D14,keyword,Customer data is not syncing between the two systems.,Integration,Other / needs review,False,,,Keyword counts; ties and no matches request review.
+D15,keyword,The connector cannot export records to our partner system.,Integration,Integration,True,,,Keyword counts; ties and no matches request review.
+D16,keyword,Please send me a copy of this month's invoice.,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+D17,keyword,What will the weather be tomorrow?,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+D18,keyword,It does not work. Please help.,Other / needs review,Other / needs review,True,,,Keyword counts; ties and no matches request review.
+D19,keyword,Users cannot log in and the API synchronization is also failing.,Other / needs review,Integration,False,,,Keyword counts; ties and no matches request review.
+D20,keyword,The dashboard is slow and several users have locked accounts.,Other / needs review,Performance,False,,,Keyword counts; ties and no matches request review.
+D01,semantic,I cannot sign in because my password is rejected.,Authentication,Authentication,True,0.5651978254318237,0.3097558617591858,One category meets the similarity and separation thresholds.
+D02,semantic,Our SSO login returns an authentication error.,Authentication,Authentication,True,0.435983806848526,0.19600054621696472,One category meets the similarity and separation thresholds.
+D03,semantic,My account is locked after several failed login attempts.,Authentication,Authentication,True,0.5493942499160767,0.38613466918468475,One category meets the similarity and separation thresholds.
+D04,semantic,The password reset link has expired.,Authentication,Authentication,True,0.39657944440841675,0.27061811089515686,One category meets the similarity and separation thresholds.
+D05,semantic,Users receive invalid credentials when signing in.,Authentication,Authentication,True,0.6405200362205505,0.40188439190387726,One category meets the similarity and separation thresholds.
+D06,semantic,The application is slow when opening the dashboard.,Performance,Performance,True,0.5805003643035889,0.41447553038597107,One category meets the similarity and separation thresholds.
+D07,semantic,Database queries now take thirty seconds to finish.,Performance,Performance,True,0.538993775844574,0.3621882200241089,One category meets the similarity and separation thresholds.
+D08,semantic,CPU usage stays at 100 percent and the application becomes sluggish.,Performance,Performance,True,0.6157021522521973,0.4115886092185974,One category meets the similarity and separation thresholds.
+D09,semantic,The reports page has a very high response time.,Performance,Performance,True,0.557443380355835,0.3723149299621582,One category meets the similarity and separation thresholds.
+D10,semantic,Opening a customer record causes a timeout.,Performance,Performance,True,0.4177349805831909,0.12694156169891357,One category meets the similarity and separation thresholds.
+D11,semantic,The webhook is no longer delivering events to the external service.,Integration,Integration,True,0.4454095661640167,0.2649623155593872,One category meets the similarity and separation thresholds.
+D12,semantic,Our API requests fail with HTTP 500 during data synchronization.,Integration,Integration,True,0.5725371837615967,0.2550826072692871,One category meets the similarity and separation thresholds.
+D13,semantic,The nightly import from the external CRM stops with a mapping error.,Integration,Integration,True,0.36469030380249023,0.19032487273216248,One category meets the similarity and separation thresholds.
+D14,semantic,Customer data is not syncing between the two systems.,Integration,Integration,True,0.4683176875114441,0.17923539876937866,One category meets the similarity and separation thresholds.
+D15,semantic,The connector cannot export records to our partner system.,Integration,Integration,True,0.44180360436439514,0.19191096723079681,One category meets the similarity and separation thresholds.
+D16,semantic,Please send me a copy of this month's invoice.,Other / needs review,Other / needs review,True,0.11944453418254852,0.09031117148697376,Weak match: no category meets the similarity threshold.
+D17,semantic,What will the weather be tomorrow?,Other / needs review,Other / needs review,True,0.0485897995531559,0.10206706449389458,Weak match: no category meets the similarity threshold.
+D18,semantic,It does not work. Please help.,Other / needs review,Other / needs review,True,0.18020598590373993,0.022269979119300842,Weak match: no category meets the similarity threshold.
+D19,semantic,Users cannot log in and the API synchronization is also failing.,Other / needs review,Authentication,False,0.64689040184021,0.12080502510070801,One category meets the similarity and separation thresholds.
+D20,semantic,The dashboard is slow and several users have locked accounts.,Other / needs review,Authentication,False,0.5465861558914185,0.12679916620254517,One category meets the similarity and separation thresholds.
