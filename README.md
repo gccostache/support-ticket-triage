@@ -123,4 +123,20 @@ Built with AI coding assistance and manually tested using fictional tickets.
 \- Compare semantic categorization with a keyword baseline.
 
 \- Test ambiguous tickets and conflicting impact information.
+## Evaluation results
 
+Evaluated on 40 fictional tickets: 20 development and 20 test
+examples. No settings were changed between the two evaluations.
+
+| Split | Keyword accuracy | Semantic accuracy | Keyword coverage | Semantic coverage |
+| --- | ---: | ---: | ---: | ---: |
+| Development | 80% | 90% | 75% | 85% |
+| Test | 65% | 90% | 50% | 75% |
+
+Accuracy includes correct human-review decisions. Coverage is the
+fraction assigned a supported category.
+
+Error analysis identified missed secondary issues in mixed tickets
+and rejection of an indirectly worded integration issue. Results
+come from a small synthetic dataset and do not establish production
+accuracy or business impact.
